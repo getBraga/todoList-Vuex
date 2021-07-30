@@ -40,7 +40,6 @@ export default {
     // Add the task List
     async addTodo() {
       try {
-        this.finish = !this.finish;
         this.create = true;
         await this.addTodoList(this.newTodo);
         await this.changeMutation();

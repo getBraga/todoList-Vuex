@@ -9,9 +9,7 @@ const api = {
   post(endpoint, params) {
     return axiosInstance.post(endpoint, params);
   },
-  put(endpoint, params) {
-    return axiosInstance.put(endpoint, params);
-  },
+
   patch(endpoint, params) {
     return axiosInstance.patch(endpoint, params);
   },
@@ -27,9 +25,7 @@ export default {
   postTodoList(params) {
     return api.post("/todo", params);
   },
-  // putTodoList(id, params) {
-  //   return api.put(`/todo/${id}`, params);
-  // },
+
   patchTodoList(id, params) {
     return api.patch(`/todo/${id}`, params);
   },
